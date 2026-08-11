@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f1e9">
+  <title>Sunshine Invitation — Aulia & Raka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main id="invitation">
+
+  <!-- COVER -->
+  <section class="cover" id="home">
+    <img class="cover-image" src="assets/images/cover.jpg" alt="Aulia dan Raka">
+    <div class="cover-overlay"></div>
+
+    <div class="cover-content">
+      <p class="eyebrow">THE WEDDING OF</p>
+      <h1>Aulia <span>&</span> Raka</h1>
+      <p class="cover-date">20 • 12 • 2026</p>
+
+      <p class="guest-label">Kepada Yth.</p>
+      <h2 id="guestName">Tamu Undangan</h2>
+
+      <button id="openInvitation" class="open-button" type="button">
+        <span>Buka Undangan</span>
+      </button>
+
+      <small class="cover-note">Mohon maaf apabila ada kesalahan penulisan nama/alamat.</small>
+    </div>
+  </section>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#home">Home</a>
+    <a href="#couple">Couple</a>
+    <a href="#event">Event</a>
+    <a href="#gallery">Moments</a>
+    <a href="#rsvp">RSVP</a>
+  </nav>
+
+  <!-- INTRO -->
+  <section class="intro section">
+    <p class="eyebrow dark">SAVE THE DATE</p>
+    <h2>Dengan penuh kebahagiaan, kami mengundang Anda untuk menjadi bagian dari hari istimewa kami.</h2>
+    <div class="divider">✦</div>
+  </section>
+
+  <!-- COUPLE -->
+  <section class="couple section" id="couple">
+    <p class="eyebrow dark">THE COUPLE</p>
+    <h2 class="section-title">Aulia & Raka</h2>
+
+    <div class="couple-grid">
+      <article class="person">
+        <img src="assets/images/groom.png" alt="Raka">
+        <h3>Raka Pratama</h3>
+        <p>Putra dari Bapak & Ibu Pratama</p>
+      </article>
+
+      <div class="ampersand">&</div>
+
+      <article class="person">
+        <img src="assets/images/bride.png" alt="Aulia">
+        <h3>Aulia Maharani</h3>
+        <p>Putri dari Bapak & Ibu Maharani</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown section dark-section">
+    <p class="eyebrow">COUNTING DOWN TO OUR DAY</p>
+    <div class="countdown-grid">
+      <div><strong id="days">00</strong><span>Hari</span></div>
+      <div><strong id="hours">00</strong><span>Jam</span></div>
+      <div><strong id="minutes">00</strong><span>Menit</span></div>
+      <div><strong id="seconds">00</strong><span>Detik</span></div>
+    </div>
+  </section>
+
+  <!-- EVENT -->
+  <section class="event section" id="event">
+    <p class="eyebrow dark">OUR SPECIAL DAY</p>
+    <h2 class="section-title">Wedding Event</h2>
+
+    <div class="event-card">
+      <p class="event-label">AKAD NIKAH</p>
+      <h3>Minggu, 20 Desember 2026</h3>
+      <p>08.00 WIB — selesai</p>
+      <hr>
+      <p class="event-label">RESEPSI</p>
+      <h3>Minggu, 20 Desember 2026</h3>
+      <p>11.00 WIB — 14.00 WIB</p>
+      <p class="venue">Grand Wedding Hall</p>
+      <p>Jl. Contoh Bahagia No. 24, Indonesia</p>
+      <a class="map-button" href="https://maps.google.com/" target="_blank" rel="noopener">Lihat Lokasi</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
+    <p class="eyebrow dark">OUR MOMENTS</p>
+    <h2 class="section-title">Memori Bersama</h2>
+
+    <div class="slider" id="slider">
+      <div class="slides">
+        <figure class="slide active"><img src="assets/images/memory-01.png" alt="Memori 1"></figure>
+        <figure class="slide"><img src="assets/images/memory-02.png" alt="Memori 2"></figure>
+        <figure class="slide"><img src="assets/images/memory-03.png" alt="Memori 3"></figure>
+        <figure class="slide"><img src="assets/images/memory-04.png" alt="Memori 4"></figure>
+        <figure class="slide"><img src="assets/images/memory-05.png" alt="Memori 5"></figure>
+        <figure class="slide"><img src="assets/images/memory-06.png" alt="Memori 6"></figure>
+      </div>
+
+      <button class="slide-button prev" id="prev" type="button" aria-label="Sebelumnya">‹</button>
+      <button class="slide-button next" id="next" type="button" aria-label="Berikutnya">›</button>
+
+      <div class="dots" id="dots"></div>
+      <div class="counter"><span id="current">01</span> / 06</div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section class="quote section">
+    <p>“Semoga langkah kecil yang kami mulai hari ini menjadi perjalanan panjang yang penuh cinta, kebahagiaan, dan keberkahan.”</p>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp section" id="rsvp">
+    <p class="eyebrow dark">RSVP</p>
+    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+
+    <form id="rsvpForm">
+      <label>Nama
+        <input id="rsvpName" type="text" placeholder="Nama Anda" required>
+      </label>
+
+      <label>Kehadiran
+        <select id="rsvpAttendance" required>
+          <option value="">Pilih</option>
+          <option value="Hadir">Hadir</option>
+          <option value="Tidak Hadir">Tidak Hadir</option>
+        </select>
+      </label>
+
+      <label>Ucapan
+        <textarea id="rsvpMessage" rows="4" placeholder="Tulis ucapan..."></textarea>
+      </label>
+
+      <button class="submit-button" type="submit">Kirim RSVP via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <img src="assets/images/closing.jpg" alt="Aulia dan Raka">
+    <div class="closing-overlay"></div>
+    <div class="closing-content">
+      <p class="eyebrow">THANK YOU</p>
+      <h2>Aulia & Raka</h2>
+      <p>20 • 12 • 2026</p>
+    </div>
+  </section>
+
+</main>
+
+<button id="musicButton" class="music-button" type="button" aria-label="Putar musik">♫</button>
+<audio id="weddingMusic" src="assets/music/wedding.mp3" preload="auto" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
